@@ -52,7 +52,7 @@
   },
   "dependencies": {
     "cids": "^0.2.0",
-    "pull-stream": "^3.4.5",
+    "pull-stream": "^3.5.0",
     "run-parallel-limit": "^1.0.3"
   },
   "contributors": [
