@@ -10,10 +10,10 @@ const pull = require('pull-stream')
 const repoContext = require.context('buffer!./test-repo', true)
 const tests = require('./block-service-test')
 
-const idb = window.indexedDB ||
-        window.mozIndexedDB ||
-        window.webkitIndexedDB ||
-        window.msIndexedDB
+const idb = self.indexedDB ||
+        self.mozIndexedDB ||
+        self.webkitIndexedDB ||
+        self.msIndexedDB
 
 idb.deleteDatabase('ipfs')
 idb.deleteDatabase('ipfs/blocks')
